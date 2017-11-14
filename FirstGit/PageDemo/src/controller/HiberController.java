@@ -39,6 +39,7 @@ public class HiberController {
 		if (pageindex < 1 || pageindex > countpage) {
 			return "index.jsp";
 		} else {
+			System.out.println("!!!");
 			// 第一步 一定要根据当前页码算出起始条数
 			//pageindex 当前页数      *5从第几条开始
 			int begin = (pageindex - 1) * 5;
