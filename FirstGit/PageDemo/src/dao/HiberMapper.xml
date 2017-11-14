@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="dao.HiberMapper">
+
+	<select id="getAll" resultType="Hiber">
+		select * from hiber order by id
+		limit #{b},#{s}
+	</select>
+
+	<select id="conut" resultType="int">
+		select count(*) from hiber
+	</select>
+
+	<select id="findById" resultType="Hiber">
+	select 
+	</select>
+
+
+</mapper>

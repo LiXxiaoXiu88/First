@@ -1,0 +1,37 @@
+package pojo;
+
+public class Hiber {
+
+	private int id;
+	private String name;
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public Hiber(int id, String name) {
+		super();
+		this.id = id;
+		this.name = name;
+	}
+
+	public Hiber() {}
+
+	
+	public String toString() {
+		return "Hiber [id=" + id + ", name=" + name + "]";
+	}
+
+}
